@@ -1,2 +1,3 @@
-# iogsotot-JS2020Q3
-Private repository for @iogsotot
+# test-features-repo
+Репозиторий на котором я обкатываю интересные приёмы, тесты, задачки и тд.
+
