@@ -10,70 +10,90 @@
 <body>
     <body>
         <header class="header">
-            <h1 class="visually-hidden">webdev</h1>
-            <nav class="nav header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#syllabus" class="nav__link"></a>Syllabus</li>
-                    <li class="nav__item logo"><a href="#" class="nav__link"><img src="/assets/logo.png" alt="logo"></a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <h1 class="visually-hidden">webdev</h1>
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--active"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Syllabus</a></li>
+                        <li class="nav__item logo"><a href="#" class="nav__link"><img src="/assets/logo.svg" alt="logo"></a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+
         <main>
             <section class="section  promo">
-                <h3 class="promo__title">You live is webdev</h3>
-                <p class="text promo__text">Whatever the approach to development may be, the final program must satisfy some fundamental properties</p>
-                <a href="#" class="btn">Get started</a>
-                <ul class="socials__list">
-                    <li class="socials__item"><a href="" class="social__link"><img class="icon icon--mail" src="/assets/icon_mail.svg" alt="mail"></a></li>
-                    <li class="socials__item"><a href="" class="social__link"><img class="icon icon--facebook" src="/assets/icon_fb.svg" alt="facebook"></a></li>
-                    <li class="socials__item"><a href="" class="social__link"><img class="icon icon--instagram" src="/assets/icon_ig.svg" alt="instagram"></a></li>
-                    <li class="socials__item"><a href="" class="social__link"><img class="icon icon--telegram" src="/assets/icon_tg.svg" alt="telegram"></a></li>
-                </ul>
+                <div class="promo__bg"></div>
+                <div class="container">
+                    <h2 class="promo__title">Your life is webdev</h2>
+                    <p class="text promo__text">Whatever the approach to development may be, the final program must satisfy some fundamental properties</p>
+                    <a href="#" class="btn">Get started</a>
+                    <ul class="socials__list">
+                        <li class="socials__item"><a href="" class="social__link"><img class="icon icon--mail" src="/assets/icon_mail.svg" alt="mail"></a></li>
+                        <li class="socials__item"><a href="" class="social__link"><img class="icon icon--facebook" src="/assets/icon_fb.svg" alt="facebook"></a></li>
+                        <li class="socials__item"><a href="" class="social__link"><img class="icon icon--instagram" src="/assets/icon_ig.svg" alt="instagram"></a></li>
+                        <li class="socials__item"><a href="" class="social__link"><img class="icon icon--telegram" src="/assets/icon_tg.svg" alt="telegram"></a></li>
+                    </ul>
+                </div>
             </section>
 
             <section class="section  represent">
-                <h3 class="heading represent__heading">Represent your idea with a smart Design</h3>
-                <p class="text represent__text">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, implementation of build systems, and management of derived artifacts, such as the machine code of computer programs. </p>
-                <a href="#" class="btn">Get started</a>
-                <div class="represent__image"></div>
+                <div class="container">
+                    <div class="text__group">
+                        <h2 class="title represent__title">Represent your idea with a smart Design</h2>
+                        <p class="text represent__text">Tasks accompanying and related to programming include: testing, debugging, source code maintenance, <span class="text--bold">implementation of build systems</span>, and management of derived artifacts, such as the machine code of computer programs. </p>
+                        <a href="#" class="btn">Get started</a>
+                    </div>
+                    <div class="represent__image"></div>
+                </div>
             </section>
 
             <section class="section  community">
-                <div class="text-group community__text-group">
-                    <img src="/assets/community_avatar" alt="" class="avatar">
-                    <h3 class="heading community__heading">our community</h3>
-                    <p class="text community__text">A hacker is any skilled computer expert that uses their technical knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
+                <div class="grid">
+                    <div class="text-group community__text-group">
+                        <img src="/assets/community_avatar.png" alt="" class="avatar">
+                        <h3 class="title community__title">our community</h3>
+                        <p class="text community__text">A hacker is any skilled computer expert that uses their technical knowledge to overcome a problem, but it can also mean a security hacker in common language</p>
+                    </div>
+                    
+                    <div class="slider__panel"><div class="arrow arrow--left"></div><span class="slider__current-slide-number">1</span> / <span class="slider__all-slide-number">5</span><div class="arrow arrow--right"></div></div>
+                    <div class="slides">
+                        <div class="slider__item"><img src="/assets/slide_1.png" class="slide" alt=""></div>
+                        <div class="slider__item"><img src="/assets/slide_2.png" class="slide" alt=""></div>
+                        <div class="slider__item"><img src="/assets/slide_3.png" class="slide" alt=""></div>
+                    </div>
+                    
                 </div>
-                <div class="slider community__slider">
-                    <div class="slider__panel"><div class="arrow arrow--left"></div><span class="slider__current-slide-number">1</span>/ <span class="slider__all-slide-number">5</span><div class="arrow arrow-right"></div></div>
-                    <div class="slider__item"><img src="/assets/slide_1.png" alt=""></div>
-                    <div class="slider__item"><img src="/assets/slide_2.png" alt=""></div>
-                    <div class="slider__item"><img src="/assets/slide_3.png" alt=""></div>
-                </div>
+
+
             </section>
 
             <section class="section  implement">
-                <div class="implement__image"></div>
-                <div class="text-group implement__text-group">
-                    <h3 class="heading implement__heading">Implement right Code</h3>
-                    <p class="text implement__text">These might be considered part of the programming process, but often the term software development is used for this larger process with the term programming, implementation</p>
-                    <a href="#" class="btn">Learn more</a>
+                <div class="container">
+                    <div class="implement__image"></div>
+                    <div class="text-group implement__text-group">
+                        <h2 class="title implement__title">Implement right Code</h2>
+                        <p class="text implement__text">These might be considered part of the <span class="text--bold">programming process</span>, but often the term software development is used for this larger process with the term programming, implementation</p>
+                        <a href="#" class="btn implement__btn">Learn more</a>
+                    </div>
                 </div>
+
             </section>
 
             <section class="section  subscribe">
-                <h3 class="heading subscribe__heading">sign up for our newsletter</h3>
-                <input type="email" name="email" id="email" placeholder="E-mail" maxlength="30"
-                pattern="^[-a-zA-Z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-zA-Z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-zA-Z0-9]([-a-zA-Z0-9]{0,61}[a-zA-Z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-zA-Z]{2,3}})$" />
-                <button class="btn btn--submit"><div class="check-mark"></div></button>
-            </div>
+                <div class="container">
+                    <h2 class="title subscribe__title">sign up for our newsletter</h2>
+                    <input type="email" name="email" id="email" placeholder="E-mail" maxlength="30"
+                    pattern="^[-a-zA-Z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-zA-Z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-zA-Z0-9]([-a-zA-Z0-9]{0,61}[a-zA-Z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-zA-Z]{2,3}})$" />
+                    <button class="btn btn--submit"><div class="check-mark"></div></button>
+                </div>
             </section>
                 
             <section class="section  download">
-                <h3 class="heading download__heading">Download the App</h3>
+                <h2 class="title download__title">Download the App</h2>
                 <p class="text download__text">Machine code was the language of early programs, written in the instruction set of the particular machine, often in binary notation.</p>
                 <button class="btn btn--apple">Apple store <div class="icon-block"><img src="/assets/icon--apple.svg" alt=""></div></button>
                 <button class="btn btn--android">Play Market<div class="icon-block"><img src="/assets/icon--android.svg" alt=""></div></button>
